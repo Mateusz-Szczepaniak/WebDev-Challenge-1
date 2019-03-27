@@ -123,6 +123,7 @@ main form button:active{
 
 .btn-red{
     background: linear-gradient(#f65d6e, #f13848);
+    border: 1px solid #a21f2a;
 }
 
 .btn-red:hover, .btn-red:focus{
