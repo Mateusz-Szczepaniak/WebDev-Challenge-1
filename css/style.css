@@ -46,6 +46,14 @@ main section h2{
     
 }
 
+.message{
+    padding: 0 10px 0 10px;
+}
+
+option, select{
+    width: 300px;
+}
+
 main form{
     background-color: #f4f4f4;
     border: 1px solid #f4f4f4;
@@ -104,10 +112,6 @@ main form button:active{
     opacity: 0.9;
 }
 
-main form button:focus{
-    
-}
-
 .btn2{
     display: flex;
     justify-content: space-between;
@@ -153,7 +157,8 @@ input::placeholder, textarea::placeholder {
 
 [type="checkbox"]:checked,
 [type="checkbox"]:not(:checked){
-    display: none;
+    position: absolute;
+    visibility: hidden;
 }
 
 [type="checkbox"] + label{
@@ -205,4 +210,8 @@ input::placeholder, textarea::placeholder {
 [type="checkbox"]:checked:focus + label:before,
 [type="checkbox"]:not(:checked):focus + label:before {
   border: 2px dotted blue;
+}
+
+[type="checkbox"]:focus, [type="checkbox"]:checked:focus, [type="checkbox"]:focus{
+    border: 2px dotted blue;
 }
