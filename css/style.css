@@ -27,7 +27,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     width: 60%;
-    margin: 0 auto 100px auto;
+    margin: 0 auto;
     justify-content: space-around;
 }
 
@@ -38,7 +38,7 @@ main section{
     text-align: center;
 }
 
-main section h2{
+h2{
     font-size: 3rem;
     color: #fff;
     text-shadow: 2px 3px 2px rgb(46, 45, 45);
@@ -134,6 +134,10 @@ label:focus-within, input:focus-within, select:focus-within, textarea:focus-with
     background-color: #fff;
 }
 
+label:focus-within{
+    border: 1px solid #3a9a00;
+}
+
 input, select, textarea{
     width: 100%;
     background-color: #f6f6f6;
@@ -207,4 +211,21 @@ input::placeholder, textarea::placeholder {
 [type="checkbox"]:checked:focus + label:before,
 [type="checkbox"]:not(:checked):focus + label:before {
   background-color: #fff;
+  border: 1px solid #3a9a00;
 }
+
+footer{
+    margin: 0 0 50px 0;
+}
+
+.screen-reader-text { 
+    border:0;   
+    clip: rect(1px, 1px, 1px, 1px); 
+    clip-path: inset(50%);
+    height: 1px; 
+    margin: -1px;
+    width: 1px; 
+    overflow: hidden; 
+    position: absolute !important;
+    word-wrap:normal !important;
+ }
