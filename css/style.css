@@ -43,15 +43,10 @@ main section h2{
     color: #fff;
     text-shadow: 2px 3px 2px rgb(46, 45, 45);
     font-weight: 400;
-    
 }
 
 .message{
     padding: 0 10px 0 10px;
-}
-
-option, select{
-    width: 300px;
 }
 
 main form{
@@ -158,7 +153,8 @@ input::placeholder, textarea::placeholder {
 [type="checkbox"]:checked,
 [type="checkbox"]:not(:checked){
     position: absolute;
-    visibility: hidden;
+    left: -99999px;
+
 }
 
 [type="checkbox"] + label{
@@ -209,9 +205,5 @@ input::placeholder, textarea::placeholder {
 
 [type="checkbox"]:checked:focus + label:before,
 [type="checkbox"]:not(:checked):focus + label:before {
-  border: 2px dotted blue;
-}
-
-[type="checkbox"]:focus, [type="checkbox"]:checked:focus, [type="checkbox"]:focus{
-    border: 2px dotted blue;
+  background-color: #fff;
 }
