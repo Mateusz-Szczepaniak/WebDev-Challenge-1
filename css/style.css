@@ -9,20 +9,17 @@ html{
     font-family: 'Titillium Web', sans-serif;
 }
 
+body{
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .logo-top, .logo-bottom{
     display: block;
     margin: 3rem auto;
     max-width: 100%;
     height: auto;
-    
-}
-
-h3{
-    font-size: 3rem;
-    color: #fff;
-    text-shadow: 2px 3px 2px rgb(46, 45, 45);
-    font-weight: 400;
-    
 }
 
 .wrap{
@@ -33,42 +30,28 @@ h3{
     justify-content: space-around;
 }
 
-body{
-    background-image: url(../img/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-section{
+main section{
     max-width: 400px;
     min-width: 400px;
     margin: 20px 0 0 0;
     text-align: center;
 }
 
-.border{
-    background-color: rgba(0,0,0,0.2);
-    padding: 18px;
-    border-radius: 4px;
+main section h3{
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 3px 2px rgb(46, 45, 45);
+    font-weight: 400;
+    
 }
 
-form{
+main form{
     background-color: #f4f4f4;
     border: 1px solid #f4f4f4;
     border-radius: 3px; 
 }
 
-i{
-    font-size: 2.2rem;
-    color: #dddddd;
-    margin: 0 13px 0 13px;
-    padding: 0 38px 0 0;
-    border-right: 1px solid #dddddd;
-    text-shadow: none;
-    width: 22px;
-}
-
-label{
+main form label{
     display: flex;
     font-size: 1.5rem;
     margin: 20px auto 0;
@@ -78,6 +61,72 @@ label{
     border-radius: 4px;
     width: 88%;
     background-color: #f6f6f6;
+}
+
+main form label span{
+    font-size: 2.2rem;
+    color: #dddddd;
+    margin: 0 13px 0 13px;
+    padding: 0 38px 0 0;
+    border-right: 1px solid #dddddd;
+    text-shadow: none;
+    width: 22px;
+}
+
+main section .border{
+    background-color: rgba(0,0,0,0.2);
+    padding: 18px;
+    border-radius: 4px;
+}
+
+main form button{
+    margin: 10px auto 24px;
+    padding: 0.7rem 0;
+    width: 88%;
+    background: linear-gradient(#a2d73f, #7ec31f);
+    color: #fff;
+    border: 1px solid #3a9a00;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px rgb(46, 45, 45);
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+main form button:hover, button:focus{
+    background: linear-gradient(#7ec31f, #a2d73f);
+}
+
+main form button:active{
+    opacity: 0.9;
+}
+
+main form button:focus{
+    
+}
+
+.btn2{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 0 0;
+}
+
+.btn{
+    width: 38%;
+}
+
+.btn-unactive{
+    opacity: 0.5;
+}
+
+.btn-red{
+    background: linear-gradient(#f65d6e, #f13848);
+}
+
+.btn-red:hover, .btn-red:focus{
+    background: linear-gradient(#f13848, #f65d6e);
 }
 
 label:focus-within, input:focus-within, select:focus-within, textarea:focus-within {
@@ -100,57 +149,6 @@ input::placeholder, textarea::placeholder {
     color: #afafaf;
     font-size: 1.5rem;
 }
-
-button{
-    margin: 10px auto 24px;
-    padding: 0.7rem 0;
-    width: 88%;
-    background: linear-gradient(#a2d73f, #7ec31f);
-    color: #fff;
-    border: 1px solid #3a9a00;
-    border-radius: 3px;
-    text-shadow: 1px 1px 1px rgb(46, 45, 45);
-    font-size: 1.8rem;
-    letter-spacing: 0.1rem;
-    cursor: pointer;
-    outline: none;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-button:hover{
-    background: linear-gradient(#7ec31f, #a2d73f);
-}
-
-button:active{
-    opacity: 0.9;
-}
-
-.btn2{
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0 0 0;
-}
-
-.btn{
-    width: 38%;
-}
-
-.btn-unactive{
-    opacity: 0.5;
-}
-
-.btn-red{
-    background: linear-gradient(#f65d6e, #f13848);
-}
-
-.btn-red:hover{
-    background: linear-gradient(#f13848, #f65d6e);
-}
-
-.logo-bottom{
-    padding: 50px 0 0 0;
-}
-
 
 [type="checkbox"]:checked,
 [type="checkbox"]:not(:checked){
@@ -201,4 +199,9 @@ button:active{
 
 [type="checkbox"]:checked + label:after{
     opacity: 1;
+}
+
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+  border: 2px dotted blue;
 }
