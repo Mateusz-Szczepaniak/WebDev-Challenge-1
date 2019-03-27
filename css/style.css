@@ -17,6 +17,14 @@ html{
     
 }
 
+h3{
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 3px 2px rgb(46, 45, 45);
+    font-weight: 400;
+    
+}
+
 .wrap{
     display: flex;
     flex-wrap: wrap;
@@ -35,10 +43,7 @@ section{
     max-width: 400px;
     min-width: 400px;
     margin: 20px 0 0 0;
-    font-size: 3rem;
     text-align: center;
-    color: #fff;
-    text-shadow: 2px 3px 2px rgb(46, 45, 45);
 }
 
 .border{
@@ -47,7 +52,7 @@ section{
     border-radius: 4px;
 }
 
-.item{
+form{
     background-color: #f4f4f4;
     border: 1px solid #f4f4f4;
     border-radius: 3px; 
