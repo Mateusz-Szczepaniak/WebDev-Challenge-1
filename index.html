@@ -12,7 +12,7 @@
 <body>
     <header>
         <h1>
-            <a href="#"><img class="logo-top" src="img/logo-top.png" alt="Masteralb Creative"></a>
+            <a href="/"><img class="logo-top" src="img/logo-top.png" alt="Masteralb Creative"></a>
         </h1>
     </header>
     <main class="wrap">
@@ -20,33 +20,51 @@
             <h2>Register Form</h2>
         <div class="border"> 
         <form action="" method="get">
+        <p>
             <label>
-                <span class="screen-reader-text">Search</span>
+                <span class="screen-reader-text">Username</span>
                 <span class="fas fa-user" aria-hidden="true"></span>
                 <input type="text" name="username" placeholder="Username" class="username">
             </label>
+        </p>
+        <p>
             <label>
+                <span class="screen-reader-text">Password</span>
                 <span class="fas fa-unlock-alt" aria-hidden="true"></span>
                 <input type="password" name="password" placeholder="Password">
             </label>
+        </p>
+        <p>
             <label>
+                <span class="screen-reader-text">Password</span>
                 <span class="fas fa-unlock-alt" aria-hidden="true"></span>
                 <input type="password" name="password" placeholder="Confirm password">
             </label>
+        </p>
+        <p>
             <label>
+                <span class="screen-reader-text">Email</span>
                 <span class="fas fa-envelope" aria-hidden="true"></span>
                 <input type="email" name="email" placeholder="Email">
             </label>
+        </p>
+        <p>
             <label>
+                <span class="screen-reader-text">Location</span>
                 <span class="fas fa-map-marker-alt" aria-hidden="true"></span>
                 <select id="location">
                     <option value="">Your Location</option>
                     <option value="dog">Poland</option>
                 </select>
             </label>
-                    <input type="checkbox" name="checkbox" id="register" />
-                    <label for="register">I have read and accept the terms of use.</label>
+        </p>
+        <p>
+            <input type="checkbox" name="checkbox" id="register">
+            <label for="register">I have read and accept the terms of use.</label>
+        </p>
+        <p>
             <button type="submit">Sign up</button>
+        </p>
         </form>
     </div>
         </section>
@@ -54,38 +72,61 @@
                 <h2>Send Email</h2>
             <div class="border"> 
             <form action="" method="get">
+                <p>
                 <label>
+                    <span class="screen-reader-text">Your Name</span>
                     <span class="fas fa-user" aria-hidden="true"></span>
                     <input type="text" name="username" placeholder="Your Name" class="username">
                 </label>
+                </p>
+                <p>
                 <label>
+                    <span class="screen-reader-text">Your Email</span>
                     <span class="fas fa-envelope" aria-hidden="true"></span>
                     <input type="email" name="email" placeholder="Your Email">
                 </label>
+                </p>
+                <p></p>
                 <label>
+                <span class="screen-reader-text">Your message</span>
                 <textarea class="message" name="message" rows="8" id="message" placeholder="Type your message..."></textarea>
                 </label>
-                        <input type="checkbox" name="checkbox" id="email" />
-                        <label for="email">Send a copy to my Email</label>
-                <button type="submit">Send Email</button>
+                </p>
+                <p></p>
+                    <input type="checkbox" name="checkbox" id="email" />
+                    <label for="email">Send a copy to my Email</label>
+                    </p>
+                    <p>
+                    <button type="submit">Send Email</button>
+                    </p>
                 </form>
         </div>
         </section>
         <section>
-                <h2>Sign in Form</h2>
+            <h2>Sign in Form</h2>
             <div class="border"> 
             <form action="" method="get">
+                <p>
                 <label>
+                    <span class="screen-reader-text">Username</span>
                     <span class="fas fa-user" aria-hidden="true"></span>
                     <input type="text" name="username" placeholder="Username" class="username">
                 </label>
+                </p>
+                <p>
                 <label>
+                    <span class="screen-reader-text">Password</span>
                     <span class="fas fa-unlock-alt" aria-hidden="true"></span>
                     <input type="password" name="password" placeholder="Password">
                 </label>
-                        <input type="checkbox" name="checkbox" id="signin" />
-                        <label for="signin">Remember me</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="checkbox" id="signin" />
+                    <label for="signin">Remember me</label>
+                </p>
+                <p>
                 <button type="submit">Sign in</button>
+                </p>
                 </form>
         </div>
         </section>
@@ -93,18 +134,26 @@
                 <h2>Recover Form</h2>
             <div class="border"> 
             <form action="" method="get">
+                <p>
                 <label>
+                    <span class="screen-reader-text">Email</span>
                     <span class="fas fa-user" aria-hidden="true"></span>
                     <input type="email" name="email" placeholder="Enter your Email" class="email">
                 </label>
+                </p>
+                <p>
                 <label>
+                    <span class="screen-reader-text">Phone number</span>
                     <span class="fas fa-mobile-alt" aria-hidden="true"></span>
                     <input type="tel" name="phone" placeholder="Enter your Phone number">
                 </label>
+                </p>
+                <p>
                 <div class="btn2">
                     <button type="submit" class="btn">Send</button>
                     <button type="submit" class="btn btn-unactive" disabled>Done</button>
-                </div>         
+                </div>
+                </p>         
             </form>
         </div>
         </section>
@@ -112,14 +161,19 @@
                 <h2>Subscribe Form</h2>
             <div class="border"> 
             <form action="" method="get">
+                <p>
                 <label>
+                    <span class="screen-reader-text">Email</span>
                     <span class="fas fa-user" aria-hidden="true"></span>
                     <input type="email" name="email" placeholder="Enter your Email" class="email">
                 </label>
+                </p>
+                <p>
                 <div class="btn2">
                     <button type="submit" class="btn">Subscribe</button>
                     <button type="submit" class="btn btn-red">No, Thanks</button>
                 </div>
+                </p>
             </form>
         </div>
         </section>
