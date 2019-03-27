@@ -17,7 +17,8 @@ body{
 
 .logo-top, .logo-bottom{
     display: block;
-    margin: 3rem auto;
+    margin: 0 auto;
+    padding: 3rem 3rem 0 3rem;
     max-width: 100%;
     height: auto;
 }
@@ -37,7 +38,7 @@ main section{
     text-align: center;
 }
 
-main section h3{
+main section h2{
     font-size: 3rem;
     color: #fff;
     text-shadow: 2px 3px 2px rgb(46, 45, 45);
