@@ -15,24 +15,24 @@
     </header>
     <main class="wrap">
         <section>
-            <p>Register Form</p>
+            <h3>Register Form</h3>
         <div class="border"> 
-        <div class="item">
+        <form>
             <label>
                 <i class="fas fa-user"></i>
-                <input type="text" placeholder="Username" class="username">
+                <input type="text" name="username" placeholder="Username" class="username">
             </label>
             <label>
                 <i class="fas fa-unlock-alt"></i>
-                <input type="password" placeholder="Password">
+                <input type="password" name="password" placeholder="Password">
             </label>
             <label>
                 <i class="fas fa-unlock-alt"></i>
-                <input type="password" placeholder="Confirm password">
+                <input type="password" name="password" placeholder="Confirm password">
             </label>
             <label>
                 <i class="fas fa-envelope"></i>
-                <input type="email" placeholder="Email">
+                <input type="email" name="email" placeholder="Email">
             </label>
             <label>
                 <i class="fas fa-map-marker-alt"></i>
@@ -41,91 +41,83 @@
                     <option value="dog">Poland</option>
                 </select>
             </label>
-            <form>
-                    <input type="checkbox" id="register" />
+                    <input type="checkbox" name="checkbox" id="register" />
                     <label for="register">I have read and accept the terms of use.</label>
-                </form>
-            <button>Sign up</button>
-        </div>
+            <button type="submit">Sign up</button>
+        </form>
     </div>
         </section>
         <section>
-                <p>Send Email</p>
+                <h3>Send Email</h3>
             <div class="border"> 
-            <div class="item">
+            <form>
                 <label>
                     <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Your Name" class="username">
+                    <input type="text" name="username" placeholder="Your Name" class="username">
                 </label>
                 <label>
                     <i class="fas fa-envelope"></i>
-                    <input type="email" placeholder="Your Email">
+                    <input type="email" name="email" placeholder="Your Email">
                 </label>
                 <label>
                 <textarea class="message" name="message" rows="8" id="message" placeholder="Type your message..."></textarea>
                 </label>
-                <form>
-                        <input type="checkbox" id="email" />
+                        <input type="checkbox" name="checkbox" id="email" />
                         <label for="email">Send a copy to my Email</label>
-                    </form>
-                <button>Send Email</button>
-            </div>
+                <button type="submit">Send Email</button>
+                </form>
         </div>
         </section>
         <section>
-                <p>Sign in Form</p>
+                <h3>Sign in Form</h3>
             <div class="border"> 
-            <div class="item">
+            <form>
                 <label>
                     <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Username" class="username">
+                    <input type="text" name="username" placeholder="Username" class="username">
                 </label>
                 <label>
                     <i class="fas fa-unlock-alt"></i>
-                    <input type="password" placeholder="Password">
+                    <input type="password" name="password" placeholder="Password">
                 </label>
-                <form>
-                        <input type="checkbox" id="signin" />
+                        <input type="checkbox" name="checkbox" id="signin" />
                         <label for="signin">Remember me</label>
-                    </form>
-                <button>Sign in</button>
-            </div>
+                <button type="submit">Sign in</button>
+                </form>
         </div>
         </section>
         <section>
-                <p>Recover Form</p>
+                <h3>Recover Form</h3>
             <div class="border"> 
-            <div class="item">
+            <form>
                 <label>
                     <i class="fas fa-user"></i>
-                    <input type="email" placeholder="Enter your Email" class="email">
+                    <input type="email" name="email" placeholder="Enter your Email" class="email">
                 </label>
                 <label>
                     <i class="fas fa-mobile-alt"></i>
-                    <input type="number" placeholder="Enter your Phone number">
+                    <input type="number" name="phone" placeholder="Enter your Phone number">
                 </label>
                 <div class="btn2">
-                    <button class="btn">Send</button>
-                    <button class="btn btn-unactive">Done</button>
-                </div>
-                
-            </div>
+                    <button type="submit" class="btn">Send</button>
+                    <button type="submit" class="btn btn-unactive">Done</button>
+                </div>         
+            </form>
         </div>
         </section>
         <section>
-                <p>Subscribe Form</p>
+                <h3>Subscribe Form</h3>
             <div class="border"> 
-            <div class="item">
+            <form>
                 <label>
                     <i class="fas fa-user"></i>
-                    <input type="email" placeholder="Enter your Email" class="email">
+                    <input type="email" name="email" placeholder="Enter your Email" class="email">
                 </label>
                 <div class="btn2">
-                    <button class="btn">Subscribe</button>
-                    <button class="btn btn-red">No, Thanks</button>
+                    <button type="submit" class="btn">Subscribe</button>
+                    <button type="submit" class="btn btn-red">No, Thanks</button>
                 </div>
-                
-            </div>
+            </form>
         </div>
         </section>
         <section>
